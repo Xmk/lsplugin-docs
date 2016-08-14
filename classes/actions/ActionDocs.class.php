@@ -72,8 +72,8 @@ class PluginDocs_ActionDocs extends ActionPlugin {
         $this->Viewer_Assign('docsPath', $this->getDocPath($component, $navActiveItem));
         $this->Viewer_Assign('docsNavActiveItem', $navActiveItem);
         $this->Viewer_Assign('docsNavItems', array(
-            [ 'name' => 'guide', 'url' => $this->getDocWebPath($component, 'guide'), 'text' => 'Guide' ],
-            [ 'name' => 'api', 'url' => $this->getDocWebPath($component, 'api'), 'text' => 'API', 'is_enabled' => $this->getDocPath($component, 'api') ],
+            array( 'name' => 'guide', 'url' => $this->getDocWebPath($component, 'guide'), 'text' => 'Guide' ),
+            array( 'name' => 'api', 'url' => $this->getDocWebPath($component, 'api'), 'text' => 'API', 'is_enabled' => $this->getDocPath($component, 'api') ),
         ));
 
         $this->SetTemplateAction('index');
